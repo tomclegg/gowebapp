@@ -1,0 +1,15 @@
+{
+    "name":"gowebapp",
+    "dependencies":{
+    },
+    "devDependencies":{
+	"check-dependencies":"",
+        "webpack":""
+    },
+    "scripts":{
+        "dev":"WEBPACK_FLAGS=-d go generate && go get ./... && $GOPATH/bin/gowebapp -listen :${PORT:-8000}",
+        "build":"WEBPACK_FLAGS=-p go generate && go get ./...",
+        "start":"npm run build && $GOPATH/bin/gowebapp -listen :${PORT:-8000}",
+        "webpack":"webpack $WEBPACK_FLAGS"
+    }
+}
