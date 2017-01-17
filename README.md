@@ -70,7 +70,7 @@ In this case, your build pipeline must run `go generate` before `go build`.
 
 ## run dev-mode server
 
-In dev mode, source maps are served, and JS is not minified.
+This runs webpack, updates bindata_assetfs.go with the new filesystem, builds a new Go binary, and runs it:
 
 ```sh
 npm run dev
@@ -81,6 +81,10 @@ To use a port other than the default 8000:
 ```sh
 PORT=8888 npm run dev
 ```
+
+In dev mode, source maps are served, and JS is not minified.
+
+After changing any source code (including static content), `^C` and run `npm run dev` again.
 
 ## build production-mode server
 
@@ -95,3 +99,8 @@ The server binary will be installed to `$GOPATH/bin/`.
 ```sh
 npm start
 ```
+
+## TODO
+
+* live dev mode with fsnotify and `webpack --watch -d`
+* etags
