@@ -62,6 +62,7 @@ If you don't need `go get` to work, and you prefer to keep generated files out o
 ```sh
 git rm bindata_assetfs.go
 echo bindata_assetfs.go >>.gitignore
+git add .gitignore
 git commit -m 'remove generated data'
 ```
 
