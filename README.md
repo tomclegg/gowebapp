@@ -86,6 +86,20 @@ In dev mode, source maps are served, and JS is not minified.
 
 After changing any source code (including static content), `^C` and run `npm run dev` again.
 
+## run tests
+
+Use nodejs to run JavaScript unit tests in `js/**/*_test.js` (see `js/example_test.js`).
+
+```sh
+npm test
+```
+
+Run Go tests the usual way.
+
+```sh
+go test ./...
+```
+
 ## build production-mode server
 
 ```sh

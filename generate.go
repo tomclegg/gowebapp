@@ -4,6 +4,6 @@
 //go:generate sh -c "rm -r bindata.tmp && mkdir bindata.tmp"
 //go:generate sh -c "npm run webpack ${WEBPACK_FLAGS:-p}"
 //go:generate sh -c "cp -rp static/* bindata.tmp/"
-//go:generate go-bindata-assetfs bindata.tmp/...
+//go:generate go-bindata-assetfs -nometadata bindata.tmp/...
 
 package main
