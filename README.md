@@ -38,6 +38,8 @@ npm run dev
 npm build
 ```
 
+The server binary will be installed to `$GOPATH/bin/`.
+
 ## build & run production-mode server
 
 ```sh
