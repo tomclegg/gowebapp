@@ -9,7 +9,20 @@ Strategy:
 
 ## dev/build dependencies
 
-Install Go and nodejs.
+Go:
+
+```
+curl https://storage.googleapis.com/golang/go1.7.4.linux-amd64.tar.gz \
+     | sudo tar -C /usr/local -xzf - \
+     && (cd /usr/local/bin && sudo ln -s ../go/bin/* .)
+```
+
+nodejs:
+
+```sh
+curl -sL https://deb.nodesource.com/setup_6.x | sudo bash -
+sudo apt-get install nodejs
+```
 
 ## run dev-mode server
 
