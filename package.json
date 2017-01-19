@@ -4,6 +4,7 @@
   "license": "Apache-2.0",
   "dependencies": {},
   "devDependencies": {
+    "bootstrap": "^3.3.7",
     "check-dependencies": "",
     "tap": "^9.0.3",
     "tape": "^4.6.3",
